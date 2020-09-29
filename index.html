@@ -69,9 +69,24 @@
 <script src="js/main.js" async></script>
 <script src="../../../js/lib/ga.js"></script>
 <script>
+function download(){
+    document.getElementById("download").click();
+}
+function stopRecording() {
+    document.getElementById("record").click();
+    alert("stoppedRecording")
+    setTimeout(download, 5000)
+}
+function startRecording(){
+    alert("Starting startRecording")
+    document.getElementById("record").click();
+    setTimeout(stopRecording, 10000)
+}
 function ss22(){
     document.getElementById("start").click();
+    setTimeout(startRecording, 10000)
 }
+
 </script>
 
 </body>
