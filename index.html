@@ -74,13 +74,14 @@
 //    document.getElementById("download").click();
 //}
 function stopRecording() {
+    document.getElementById("output").innerHTML ="stop recording ..";
     document.getElementById("record").click();
-    //document.getElementById("output").innerHTML ="stop recording ..";
     //setTimeout(download, 5000)
 }
 function startRecording(){
+    
+    document.getElementById("output").innerHTML ="started recording ..";
     document.getElementById("record").click();
-    //document.getElementById("output").innerHTML ="started recording ..";
     setTimeout(stopRecording, 5000)
 }
 function ss22(){
