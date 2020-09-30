@@ -63,6 +63,7 @@
        title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
 
 </div>
+<p id="output"></p>
 
 <!-- include adapter for srcObject shim -->
 <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
@@ -74,11 +75,12 @@
 //}
 function stopRecording() {
     //document.getElementById("record").click();
-    alert("stopRecording")
+    document.getElementById("output").innerHTML ="stop recording ..";
     //setTimeout(download, 5000)
 }
 function startRecording(){
     document.getElementById("record").click();
+    document.getElementById("output").innerHTML ="started recording ..";
     setTimeout(stopRecording, 5000)
 }
 function ss22(){
